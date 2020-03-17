@@ -6,7 +6,7 @@ Mazes for Programmers by Jamis Buck
 ```shell
 cd path/to/project
 virtualenv -p python3.6 mazes
-source ./venv/bin/activate
+source ./mazes/bin/activate
 pip install -r requirements.txt
 
 ```
