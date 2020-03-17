@@ -1,7 +1,8 @@
-# Overview
-Mazes for Programmers by Jamis Buck
-- An implementation of maze generation algorithms in Python
+## Mazes!
 
+An implementation of maze generation algorithms in Python, based on Mazes for Programmers by Jamis Buck.
+
+Set up steps:
 
 ```shell
 cd path/to/project
