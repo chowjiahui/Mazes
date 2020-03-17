@@ -1,13 +1,11 @@
-from algorithm.aldous_broder import AldousBroder
-from algorithm.wilsons import Wilsons
+from algorithm_factory import AlgorithmFactory
 from component.distance_grid import DistanceGrid
-from algorithm.sidewinder import Sidewinder
 from component.distances import Distances
-from component.grid import Grid
 
 if __name__ == '__main__':
     grid = DistanceGrid(7, 7)
-    Wilsons.on(grid)
+    factory = AlgorithmFactory()
+    factory.get("Wilsons").on(grid)
     print(grid)
     grid.set_start(grid.record[0][0])
 
