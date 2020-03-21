@@ -56,7 +56,7 @@ class Distances:
                     break
         return breadcrumbs
 
-    def _max(self):
+    def max_cell_and_distance(self):
         max_distance = 0
         max_cell = self.root
 
