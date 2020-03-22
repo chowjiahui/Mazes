@@ -6,6 +6,11 @@ class Cell:
         self.links = dict()
         self.north, self.south, self.west, self.east = None, None, None, None
 
+    @property
+    def neighbours(self):
+        _all = [self.north, self.south, self.west, self.east]
+        return [x for x in _all if x]
+
     def link(self, cell, bidi=True):
         self.links[cell] = True
         if bidi:
@@ -16,12 +21,5 @@ class Cell:
         if bidi:
             cell.unlink(self, False)
 
-    def links(self):
-        return self.links.keys()
-
     def is_linked(self, cell):
         return cell in self.links
-
-    def neighbours(self):
-        _all = [self.north, self.south, self.west, self.east]
-        return [x for x in _all if x]
