@@ -1,5 +1,5 @@
 # Core libs
-numpy==1.14.0
+numpy==1.22.0
 pandas==0.21.0
 scikit-learn==0.20.0
 h5py==2.7.0
